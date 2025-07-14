@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+#include <ctype.h>
+
+int main() {
+
+    char ch;
+
+    scanf(" %c", &ch);  // Read one character (with space to skip whitespaces)
+
+    // Convert to lowercase for easier comparison
+
+    char lower = tolower(ch);
+
+    // Check if it's an alphabet
+
+    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
+
+        if (lower == 'a' || lower == 'e' || lower == 'i' || lower == 'o' || lower == 'u') {
+
+            printf("The Character %c is Vowel\n", ch);
+
+        } else {
+
+            printf("The Character %c is Consonant\n", ch);
+
+        }
+
+    } else {
+
+        printf("Invalid Input\n");
+
+    }
+
+    return 0;
+
+}
