@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    // Input: one number per line
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+
+    // Nested if-else to find the largest
+    if (a > b) {
+        if (a > c) {
+            printf("a is largest then b and c\n");
+        } else {
+            printf("c is largest then a and b\n");
+        }
+    } else {
+        if (b > c) {
+            printf("b is largest then a and c\n");
+        } else {
+            printf("c is largest then a and b\n");
+        }
+    }
+
+    return 0;
+}
